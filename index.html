@@ -17,16 +17,17 @@
 
     <header class="w-11/12 mx-auto ">
         <nav class="">
+            <div class="lg:hidden">
+                <div class=" flex justify-between">
+                    <div> <img class="p-2" src="./c2-assets/Group.svg" alt=""></div>
+                    <div class="text-2xl p-2"> <i class="fa-solid fa-bars"></i> </div>
+                </div>
+                <hr class="border-[#179800]">
+            </div>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
+
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             <li><a>product</a></li>
@@ -34,7 +35,7 @@
                             <li><a>Contract</a></li>
                         </ul>
                     </div>
-                    <img src="./c2-assets/logo-header.png" alt="">
+                    <img class="lg:block hidden sm:hidden" src="./c2-assets/logo-header.png" alt="">
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -44,12 +45,13 @@
                     </ul>
                 </div>
                 <div class="navbar-end gap-1">
-                    <i class="fa-solid fa-magnifying-glass mr-6"></i>
-                    <i class="fa-solid fa-cart-shopping mr-6"></i>
-                    <button class="btn btn-outline btn-success px-7 py-3 mr-3">Login</button>
-                    <button class="btn btn-success bg-[#179800] text-white px-7 py-3">Register</button>
+                    <i class="lg:block hidden fa-solid fa-magnifying-glass mr-6"></i>
+                    <i class="lg:block hidden fa-solid fa-cart-shopping mr-6"></i>
+                    <button class="lg:block hidden btn btn-outline btn-success px-7 py-3 mr-3">Login</button>
+                    <button class="lg:block hidden btn btn-success bg-[#179800] text-white px-7 py-3">Register</button>
                 </div>
             </div>
+
         </nav>
 
         <!-- banner section -->
@@ -215,8 +217,8 @@
         </div>
 
         <!-- Arrival & Offers section -->
-        <h1 class="w-11/12 mx-auto mt-20 mb-10 font-bold text-3xl  text-[#179800]">Arrival & Offers</h1>
-        <div class="w-11/12 mx-auto lg:gap-3  lg:flex mb-10  space-y-4 md:space-y-0">
+        <h1 class="w-11/12 mx-auto mt-20 mb-6 font-bold text-3xl  text-[#179800]">Arrival & Offers</h1>
+        <div class="w-11/12 mx-auto lg:gap-3 mb-80  lg:flex space-y-4 md:space-y-0">
             <!-- card-1 -->
             <div
                 class="lg:w-[780px] sm:w-[300px] lg:h-[344px] sm:h-[200px] bg-[#115414] rounded-lg p-5 flex justify-between ">
@@ -251,14 +253,20 @@
 
         </div>
 
+
+    </main>
+
+
+    <footer class="footer bg-neutral text-neutral-content p-10 bg-[#179800] pt-80 relative">
+
         <!-- card grocery section -->
-        <div class="w-11/12 mx-auto lg:flex bg-[#EFEBE3] rounded-md justify-evenly mb-5">
+        <div class="lg:w-11/12 mr-6  mx-auto lg:flex bg-[#EFEBE3] rounded-md justify-evenly mb-5 absolute -top-40 left-10">
             <div>
-                <img src="./c2-assets/vegetable-busket.png" alt="">
+                <img class="lg:w-full sm:w-[50px] "  src="./c2-assets/vegetable-busket.png" alt="">
             </div>
             <div>
                 <div class="flex justify-center">
-                    <h1 class="mt-20 text-3xl font-bold mb-4 text-[#179800]">Get Grocery News!</h1>
+                    <h1 class="lg:mt-20 text-3xl font-bold mb-4 text-[#179800]">Get Grocery News!</h1>
 
                 </div>
                 <div class="lg:w-full flex justify-center">
@@ -269,35 +277,33 @@
 
                 <div class="flex justify-center my-2">
                     <!-- <p class="my-3">Exclusive training tips, ticks, product deals and more.</p> -->
-                    <h1 class=" text-sm   ">Exclusive training tips, ticks, product deals and more.</h1>
+                    <h1 class=" text-sm text-center text-black ">Exclusive training tips, ticks, product deals and more.</h1>
                 </div>
 
                 </p>
                 <div class="flex justify-center my-2 ">
-                    <button class="btn mb-4 bg-[#179800] text-white px-6 py-2">Subscribe</button>
+                    <button class="btn mb-2 bg-[#179800] text-white px-6 py-2">Subscribe</button>
                 </div>
             </div>
         </div>
-    </main>
+
+        <aside class="lg:mt-0 sm:mt-32">
 
 
-    <footer class="footer bg-neutral text-neutral-content p-10 bg-[#179800] pt-56">
-        <aside>
-
-            <img src="./c2-assets/logo-footer.png" alt="">
+            <img class="pt-4" src="./c2-assets/logo-footer.png" alt="">
             <p>
                 Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends
             </p>
 
         </aside>
-        <aside>
+        <aside class="">
 
             <p>Product</p>
             <p>Services</p>
             <p>Contract us</p>
         </aside>
-        <nav>
-            <h6 class="footer-title">Social</h6>
+        <nav class="">
+            <h6 class="footer-title">Follow Us</h6>
             <div class="grid grid-flow-col gap-4">
                 <a>
                     <i class="fa-brands fa-facebook"></i>
